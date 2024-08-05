@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Website</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #3498db;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            overflow: hidden;
+        }
+        section {
+            padding: 20px;
+            background: #fff;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #34495e;
+        }
+        h2 {
+            margin-top: 0;
+            color: #3498db;
+        }
+        .contact-email a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-email a:hover {
+            text-decoration: underline;
+        }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .about-me-content {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .about-me-content img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 50%;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+            .about-me-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Resume</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="home">
+            <h2>Home</h2>
+            <p>Welcome to my resume website. Here you can find information about my background, skills, and how to contact me.</p>
+        </section>
+
+        <section id="about-me">
+            <h2>About Me</h2>
+            <div class="about-me-content">
+                <img src="C:\Users\Dhruvi\Documents\resume file\profile.jpg" alt="Profile Picture" class="profile-image">
+                <div>
+                    <p><strong>Name:</strong> Dhruvi Sheladiya</p>
+                    <p><strong>Email:</strong> <span class="contact-email"><a href="mailto:sheladiyadhruvi8411@gmail.com">sheladiyadhruvi8411@gmail.com</a></span></p>
+                    <p><strong>Phone:</strong> 123-456-7890</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+            <p><strong>Role:</strong> Web Developer / Web Designer</p>
+            <p><strong>Company Name:</strong> [Your Company]</p>
+            <p><strong>Description:</strong> [Brief description of your role and responsibilities]</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, please email me at <span class="contact-email"><a href="mailto:sheladiyadhruvi8411@gmail.com">sheladiyadhruvi8411@gmail.com</a></span>.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Dhruvi Sheladiya. All rights reserved.</p>
+    </footer>
+</body>
+</html>
